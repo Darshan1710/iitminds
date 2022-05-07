@@ -1,0 +1,6 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+
+Header always set Content-Security-Policy "upgrade-insecure-requests;"

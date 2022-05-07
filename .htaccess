@@ -1,0 +1,17 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
+
+# HTTP and non WWW to HTTPS and WWW code #
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+# HTTP to HTTPS code #
+RewriteCond %{HTTP_HOST} ^(www\.)?iit-minds\.com
+RewriteRule ^(.*)$ https://www.iit-minds.com/$1 [R,L]
+# NON WWW to WWW code #
+RewriteCond %{HTTP_HOST} ^iit-minds.com [NC]
+RewriteRule ^(.*)$ http://www.iit-minds.com/$1 [L,R=301]
