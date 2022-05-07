@@ -162,7 +162,9 @@
                 <h4 class="widget-title line-bottom">Courses List</h4>
                 <div class="services-list">
                   <ul class="list list-border">
-                    <li class="active"><a href="#">VII + IX + X (SSC)</a></li>
+                      <li class=""><a href="engineering.php">Engineering</a></li>
+                      <li class=""><a href="medical.php">Medical</a></li>
+                      <li class=""><a href="commerce.php">Commerce</a></li>
                   </ul>
                 </div>
               </div>

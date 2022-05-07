@@ -60,7 +60,7 @@
         <div class="section-content">
           <div class="row">
             <div class="col-md-12 text-center">
-              <span class="title text-white">School Section</span>
+              <span class="title text-white">Commerce</span>
             </div>
           </div>
         </div>
