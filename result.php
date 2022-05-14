@@ -97,7 +97,7 @@ $sections = mysqli_query($con, $query);
                         <div class="col-md-12">
                             <!-- Portfolio Gallery Grid -->
                             <h4 class="title text-uppercase font-raleway font-weight-500 m-0 pb-30"><?php echo $section['section']; ?></h4>
-                            <div id="grid" class="gallery-isotope grid-3 gutter clearfix">
+                            <div id="grid" class="gallery-isotope grid-4 gutter clearfix">
                                 <?php
                                 $query = 'SELECT * FROM result WHERE section = "' . $section['section'] . '"';
                                 $result = $con->query($query);

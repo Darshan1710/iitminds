@@ -25,7 +25,7 @@ $hours = mysqli_query($con, "SELECT * FROM opening_hours");
     <div class="latest-posts">
         <?php while ($news_row = mysqli_fetch_array($news)) { ?>
             <article class="post media-post clearfix pb-0 mb-10">
-                
+
                 <div class="post-right">
                     <h5 class="post-title mt-0"><a href="#"><?php echo $news_row['news']; ?>    </a></h5>
                     <p></p>
