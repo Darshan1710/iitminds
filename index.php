@@ -650,7 +650,7 @@
                                             <span class="text-theme-color-2">Coaching</span></h1>
                                         <p>We Offer Quality Foundation Coaching <br>For - Std VIII | IX | X.</p>
                                         <a href="coaching-classes-8th-9th-ssc-coaching.php"
-                                           class="btn btn-sm btn-theme-colored">Read more</a>
+                                           class="btn btn-sm btn-theme-colored">School SSC</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6 wow fadeInUp" data-wow-duration="1.2s">
@@ -662,7 +662,9 @@
                                             Exam <span class="text-theme-color-2">Coaching</span></h2>
                                         <p>Std XI | XII (Science) - PCMB / PCM</p>
                                         <p>NEET , JEE (Mains & Advanced) MHT - CET</p>
-                                        <a href="best-classes-for-11th-and-12th-science-mumbai-ghaktopar.php" class="btn btn-sm btn-theme-colored">Read more</a>
+                                        <a href="engineering.php" class="btn btn-sm btn-theme-colored">Engineering</a>
+                                        <a href="medical.php" class="btn btn-sm btn-theme-colored">Medical</a>
+                                        <a href="commerce.php" class="btn btn-sm btn-theme-colored">Commerce</a>
                                     </div>
                                 </div>
                             </div>
