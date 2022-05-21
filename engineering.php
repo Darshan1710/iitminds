@@ -115,17 +115,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <h3 class="text-theme-colored title-border mb-30 mt-50">Get A Free Registration!</h3>
-              
-                  <!-- Appointment Form Sart-->
-				  
-                  <?php include('include/registration_form.php'); ?> 
-				  
-                  <!-- Appointment Form Ends -->
-                </div>
-              </div>
+
             </div>
           </div>
           <div class="col-sm-12 col-md-4">

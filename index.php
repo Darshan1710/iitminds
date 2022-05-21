@@ -1,14 +1,4 @@
-<?php
-include 'db.php';
-$courses = mysqli_query($con, "SELECT * FROM `courses` ");
-$slider = mysqli_query($con, "SELECT * FROM slider");
 
-while ($slider_row = mysqli_fetch_array($slider)) {
-    $image[] = $slider_row['slider'];
-}
-
-
-?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -130,7 +120,13 @@ while ($slider_row = mysqli_fetch_array($slider)) {
             <div class="rev_slider_wrapper">
                 <div class="rev_slider" data-version="5.0">
                     <ul>
+                        <?php
+                        $slider = mysqli_query($con, "SELECT * FROM slider");
 
+                        while ($slider_row = mysqli_fetch_array($slider)) {
+                            $image[] = $slider_row['slider'];
+                        }
+                        ?>
                         <!-- SLIDE 1 -->
                         <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default"
                             data-easein="default" data-easeout="default" data-masterspeed="default"
@@ -809,7 +805,9 @@ while ($slider_row = mysqli_fetch_array($slider)) {
                 <div class="row multi-row-clearfix">
                     <div class="col-md-12">
                         <div class="owl-carousel-3col owl-nav-top" data-dots="true">
-                            <?php while ($courses_row = mysqli_fetch_array($courses)) {
+                            <?php
+                            $courses = mysqli_query($con, "SELECT * FROM `courses` ");
+                            while ($courses_row = mysqli_fetch_array($courses)) {
                                 if ($courses_row['commencement'] != '0000-00-00') {
                                     ?>
                                     <div class="item">

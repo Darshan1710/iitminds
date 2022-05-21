@@ -129,7 +129,7 @@ include 'db.php';
                                                 <div class="icons-holder">
                                                     <div class="icons-holder-inner">
                                                         <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
-                                                            <a data-lightbox="image" href="<?php echo $base_url.$mediapress['src'];?>" title="<?php $mediapress['title']; ?>"><i class="fa fa-picture-o"></i></a>
+                                                            <a data-lightbox="image" href="<?php echo $image_url.$mediapress['src'];?>" title="<?php $mediapress['title']; ?>"><i class="fa fa-picture-o"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>

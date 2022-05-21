@@ -8,7 +8,7 @@
           <nav id="menuzord" class="menuzord bg-theme-colored pull-left flip menuzord-responsive">
             <ul class="menuzord-menu">
               <li class="<?php if($file_name == ' ') { echo 'active'; } ?>"><a href="<?php echo "https://" . $_SERVER['SERVER_NAME']; ?>">Home</a></li>
-                <li class="<?php if($file_name == 'founder.php' || $file_name == 'iit-minds.php' || $file_name == 'media-&-press.php' || $file_name == 'facilities.php') { echo 'active'; } ?>"><a href="founder.php">About </a>
+                <li class="<?php if($file_name == 'founder.php' || $file_name == 'iit-minds.php') { echo 'active'; } ?>"><a href="#">About </a>
                     <ul class="dropdown">
                         <li><a href="iit-minds.php">IITMINDS</a></li>
                         <li><a href="founder.php">Founder</a></li>
@@ -34,7 +34,16 @@
                     
                 </ul>
               </li>
-              <li class="<?php if($file_name == 'result.php') { echo 'active'; } ?>"><a href="result.php">Result</a></li>
+              <li class="<?php if($file_name == 'result.php' || $file_name == 'media-&-press.php') { echo 'active'; } ?>"><a href="#">
+                      Result</a>
+                  <ul class="dropdown">
+                      <li class="<?php if($file_name == 'result.php') { echo 'active'; } ?>"><a href="result.php">Recent Results</a>
+                      </li>
+                      <li class="<?php if($file_name == 'media-&-press.php') { echo 'active'; } ?>"><a href="media-&-press.php">Previous Results</a>
+                      </li>
+
+                  </ul>
+              </li>
               <!-- <li class="<?php if($file_name == 'blog.php') { echo 'active'; } ?>"><a href="blog.php">Blog</a></li> -->
               <li class="<?php if($file_name == 'contact-us.php') { echo 'active'; } ?>"><a href="contact-us.php">Contact Us</a></li>
 

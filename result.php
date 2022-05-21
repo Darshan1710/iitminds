@@ -106,7 +106,7 @@ $sections = mysqli_query($con, $query);
                                     <div class="gallery-item wheel">
                                         <div class="work-gallery">
                                             <div class="gallery-thumb">
-                                                <img class="img-fullwidth" alt=""
+                                                <img class="img-fullwidth img-responsive" alt=""
                                                      src="<?php echo $image_url . $result_row['src']; ?>">
                                                 <div class="gallery-overlay"></div>
                                                 <div class="gallery-contect">

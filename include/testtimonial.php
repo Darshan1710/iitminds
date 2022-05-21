@@ -4,38 +4,8 @@ $news = mysqli_query($con, "SELECT * FROM news ORDER BY id DESC LIMIT 6");
 $feedback = mysqli_query($con, "SELECT * FROM feedback");
 $hours = mysqli_query($con, "SELECT * FROM opening_hours");
 ?>
-<div class="widget">
-    <h4 class="widget-title line-bottom">Opening Hours</h4>
-    <div class="opening-hours">
-        <ul class="list-border">
-            <ul class="list-border">
-                <?php while ($hours_row = mysqli_fetch_array($hours)) { ?>
-                    <li class="clearfix"><span><?php echo $hours_row['day']; ?> : </span>
-                        <div class="value pull-right"> <?php echo date('h:i', strtotime($hours_row['open'])) ?> am
-                            - <?php echo date('h:i', strtotime($hours_row['close'])) ?> pm
-                        </div>
-                    </li>
-                <?php } ?>
-            </ul>
-        </ul>
-    </div>
-</div>
-<div class="widget">
-    <h4 class="widget-title line-bottom">Latest News</h4>
-    <div class="latest-posts">
-        <?php while ($news_row = mysqli_fetch_array($news)) { ?>
-            <article class="post media-post clearfix pb-0 mb-10">
 
-                <div class="post-right">
-                    <h5 class="post-title mt-0"><a href="#"><?php echo $news_row['news']; ?>    </a></h5>
-                    <p></p>
 
-                </div>
-            </article>
-        <?php } ?>
-
-    </div>
-</div>
 <div class="widget">
     <div class="mt-30 p-30" style="border: 10px solid #f1f1f1;">
         <h5 class="text-theme-colored title-border mb-20">student's Feedback</h5>

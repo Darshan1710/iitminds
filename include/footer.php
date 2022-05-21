@@ -13,15 +13,8 @@
       <div class="row">
         <div class="col-sm-6 col-md-3">
           <div class="widget dark">
-            <h4 class="widget-title line-bottom-theme-colored-2">Office Hours</h4>
-            <div class="opening-hours">
-              <ul class="list-border">
-                <li class="clearfix"> <span> Mon - Sun :  </span>
-                  <div class="value pull-right"> 9.00 am - 7.00 pm </div>
-                </li>
-              </ul>
-            </div>
-            <h4 class="widget-title line-bottom-theme-colored-2 mt-30">Office Address</h4>
+            <h4 class="widget-title line-bottom-theme-colored-2">Office Address</h4>
+
             <div class="opening-hours">
               
               <p>Office no. 3, Arvind Villa, Station Road, Opp. Ghatkopar Station, Bharat Cafe Hotel, Ghatkopar (W)</p>

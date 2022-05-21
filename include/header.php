@@ -1,3 +1,4 @@
+<?php include 'db.php'; ?>
 <div class="header-top bg-theme-color-2 sm-text-center p-0">
       <div class="container">
         <div class="row">
@@ -6,10 +7,13 @@
           </div>
 		  <div class="col-md-6">
 			   <marquee  class="marquee_text">
-			        New dates of examinations :
-					JEE Main (2020) to be held between 01-Sep-2020 To 06-09-2020. |
-                    NEET - UG TO be conducted on 13-Sep-2020. |
-                    JEE Advanced 27-Sep-2020.
+			        <?php $marqueeQuery = "SELECT * FROM marquee_text WHERE status = '1' ORDER BY id DESC LIMIT 1 ";
+                    $marquee = mysqli_query($con,$marqueeQuery);
+                    if($marquee){
+                        foreach($marquee as $marqueeRow){
+                            echo $marqueeRow['heading'];
+                        }
+                    }?>
 			 </marquee>
 			 
 		  </div>
@@ -29,7 +33,7 @@
     <div class="header-middle p-0 bg-lightest xs-text-center">
       <div class="container pt-0 pb-0">
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-5">
+          <div class="col-xs-12 col-sm-8 col-md-8">
             <div class="widget no-border m-0">
               <a href="index.php" class="menuzord-brand pull-left flip xs-pull-center mb-15" href="javascript:void(0)"><img src="images/logo.png"  width="200px" alt="iit-minds" title="iit-minds"></a>
             </div>
@@ -49,18 +53,7 @@
               </ul>
             </div>
           </div>  
-          <div class="col-xs-12 col-sm-4 col-md-3">
-            <div class="widget no-border pull-right sm-pull-none sm-text-center mt-10 mb-10 m-0">
-              <ul class="list-inline">
-                <li><i class="fa fa-clock-o text-theme-colored font-36 mt-5 sm-display-block"></i></li>
-                <li>
-                  <a href="#" class="font-12 text-gray text-uppercase"><strong>We are open !</strong></a>
-                  <h5 class="font-13 text-black m-0"> Mon - Sun 9:00 am - 7:00 pm</h5>
-                  
-                </li>
-              </ul>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
