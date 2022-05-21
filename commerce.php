@@ -87,7 +87,7 @@
                </ul>
               <div class="row">
                 <div class="col-md-12">
-                  <h2 class="text-theme-colored" style="font-size:24px;font-weight:700;">We maintain small batch sizes (only 25 students per batch) to ensure personal attention to every student.</h2>
+                  <h2 class="text-theme-colored" style="font-size:24px;font-weight:700;">We maintain small batch sizes to ensure personal attention to every student.</h2>
                   <p>We also train students for NTSE, KVPY, HBBVS, MTSE, RMO, etc</p><br>
 				  <h3 class="text-theme-colored" style="font-size:24px;font-weight:700;"></h3>
                   <div class="row">
