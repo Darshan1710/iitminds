@@ -825,15 +825,7 @@
                                                             href="<?php echo $courses_row['link'] ?>"><?php echo $courses_row['heading']; ?></a>
                                                 </h4>
                                                 <p> <?php echo $courses_row['description']; ?></p>
-                                                <ul class="list-inline project-conditions text-center m-0 p-10">
-                                                    <li class="current-fund" style="width:50% !important;"><strong>Date
-                                                            of
-                                                            commencement</strong><?php echo date('d F Y', strtotime($courses_row['commencement'])); ?>
-                                                    </li>
-                                                    <li class="remaining-days"><strong>Course
-                                                            Duration</strong><?php echo $courses_row['duration'] . " year"; ?>
-                                                    </li>
-                                                </ul>
+
                                             </div>
                                         </div>
                                     </div>
@@ -850,17 +842,7 @@
                                                 </h4>
                                                 <p><?php echo $courses_row['heading']; ?>Prepare for the entrance
                                                     examinations with an assurance from IITMINDS Enroll Now ! </p>
-                                                <ul class="list-inline project-conditions text-center m-0 p-10">
-                                                    <li class="current-fund">
-                                                        <strong>Integrated<br>Batch</strong><?php echo date('d F Y', strtotime($courses_row['integrated_batch'])); ?>
-                                                    </li>
-                                                    <li class="target-fund">
-                                                        <strong>Regular<br>Batch</strong><?php echo date('d F Y', strtotime($courses_row['regular_batch'])); ?>
-                                                    </li>
-                                                    <li class="remaining-days"><strong>Course
-                                                            Duration</strong><?php echo $courses_row['duration'] . " year"; ?>
-                                                    </li>
-                                                </ul>
+
                                             </div>
                                         </div>
                                     </div>
