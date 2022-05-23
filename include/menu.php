@@ -49,13 +49,7 @@
 
               </li>
             </ul>
-            <ul class="pull-right flip hidden-sm hidden-xs">
-              <li>
-                <!-- Modal: Enroll Now Starts -->
-                <a class="btn btn-colored btn-flat bg-theme-color-2 text-white font-14 bs-modal-ajax-load mt-0 p-30 pr-15 pl-15" data-toggle="modal" data-target="#BSParentModal" href="ajax-load/reservation-form.php">Enroll Now</a>
-                <!-- Modal: Enroll Now End -->
-              </li>
-            </ul>
+            
             <div id="top-search-bar" class="collapse">
               <div class="container">
                 <form role="search" action="#" class="search_form_top" method="get">
