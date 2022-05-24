@@ -103,7 +103,19 @@ $archive = mysqli_query($con , "SELECT COUNT(CONCAT(MONTHNAME(date), ' ', YEAR(d
                                             </a>
                                         </div>
                                         <div class="col-md-6">
-                                            <div style="font-family: times new roman;font-size: 16px;color:black;"><?php echo $row['description']; ?></div>
+                                            <div style="font-family: times new roman;font-size: 16px;color:black;"><?php
+                                                $string = strip_tags($row['description']);
+                                                if (strlen($string) > 500) {
+
+                                                    // truncate string
+                                                    $stringCut = substr($string, 0, 500);
+                                                    $endPoint = strrpos($stringCut, ' ');
+
+                                                    //if the string doesn't contain any space then it will cut without word basis.
+                                                    $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                    $string .= '... <a href="view_blog.php?blog_id="'.$row['id'];'>Read More</a>';
+                                                }
+                                                echo $string;?></div>
                                         </div>
                                     </div>
 
@@ -138,23 +150,23 @@ $archive = mysqli_query($con , "SELECT COUNT(CONCAT(MONTHNAME(date), ' ', YEAR(d
                             
                                 <!-- Feautered post-->
                                <div class="col-md-3 col-sm-9 sidebar" >
-                                   <div>
-                                       <h4>FEATURED POSTS</h4>
-                                   </div>
-                                   <ul>
-                                       <?php while($post = mysqli_fetch_array($future_post)){?>
-                                       <li class="posts">
-                                           <table class="mt-10">
-                                               <td>
-                                           <a href="#"><img src="<?php echo $image_url.$post['image']; ?>" width="50" height="50" alt="<?php basename($post['image']);?>"></a>
-                                           </td>
-                                           <td>
-                                               <h5 class="title ml-10" style="margin-top: -25px;"><?php echo $post['title']; ?></h5>
-                                           </td>
-                                           </table>
-                                       </li>
-                                       <?php } ?>
-                                   </ul>
+<!--                                   <div>-->
+<!--                                       <h4>FEATURED POSTS</h4>-->
+<!--                                   </div>-->
+<!--                                   <ul>-->
+<!--                                       --><?php //while($post = mysqli_fetch_array($future_post)){?>
+<!--                                       <li class="posts">-->
+<!--                                           <table class="mt-10">-->
+<!--                                               <td>-->
+<!--                                           <a href="#"><img src="--><?php //echo $image_url.$post['image']; ?><!--" width="50" height="50" alt="--><?php //basename($post['image']);?><!--"></a>-->
+<!--                                           </td>-->
+<!--                                           <td>-->
+<!--                                               <h5 class="title ml-10" style="margin-top: -25px;">--><?php //echo $post['title']; ?><!--</h5>-->
+<!--                                           </td>-->
+<!--                                           </table>-->
+<!--                                       </li>-->
+<!--                                       --><?php //} ?>
+<!--                                   </ul>-->
 
                                    <div>
                                        <h4>ARCHIVES</h4>

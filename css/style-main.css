@@ -379,12 +379,12 @@ body {
 img {
   max-width: 100%;
 }
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/*ul,*/
+/*ol {*/
+/*  list-style: none;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
 .fluid-video-wrapper {
   padding: 0;
   position: relative;
@@ -500,12 +500,12 @@ iframe {
   width: 30px;
 }
 /* -------- List ---------- */
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/*ul,*/
+/*ol {*/
+/*  list-style: none;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
 ul ul,
 ol ul {
   margin-left: 15px;

@@ -68,7 +68,7 @@ $recent_blog = mysqli_query($con , "SELECT * FROM blog LIMIT 3 OFFSET ".$_GET['b
                 <section>
                     <div class="container blog_body">
                         <div class="row">
-                            <?php while($row = mysqli_fetch_array($blog)) {?>
+                            <?php while($row = mysqli_fetch_assoc($blog)) {?>
                             <div class="col-md-9 col-sm-9 ">
                                 <h1><?php echo $row['title'];?></h1>
                                 <div class="clearfix mb-10" >
@@ -82,7 +82,7 @@ $recent_blog = mysqli_query($con , "SELECT * FROM blog LIMIT 3 OFFSET ".$_GET['b
                                 
                                 <span><span class="glyphicon glyphicon-calendar"></span>
                                     <?php
-                                    $originalDate = $blog['date'];
+                                    $originalDate = $row['date'];
                                     $newDate2 = date("l, d F Y", strtotime($originalDate)); //from line no 231 
                                     echo $newDate2;
                                     ?>
@@ -99,13 +99,15 @@ $recent_blog = mysqli_query($con , "SELECT * FROM blog LIMIT 3 OFFSET ".$_GET['b
                                 <a><strong>Mobile</strong></a>
                                 </div>
                                 <div style="box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.15);">
-                                    <div class="col-md-6">
-                                    <a href="<?php echo $base_url.$row['blog_img'];?>">
-                                    <img src="<?php echo $base_url.$row['blog_img'];?>" alt="best-science-classes-in-mumbai" title="best-science-classes-in-mumbai" width="420px" height="280px">                                                           
+                                    <div class="col-md-12">
+                                    <a href="view_blog.php?blog_id=<?php echo $row['id'];?>">
+                                    <img src="<?php echo $image_url.$row['blog_img'];?>" alt="best-science-classes-in-mumbai" title="best-science-classes-in-mumbai" width="420px" height="280px">
                                     </a>
                                     </div>
-                                    <div class="col-md-6">
-                                    <div style="font-family: times new roman;font-size: 16px;color:black;"><?php echo $row['description'];?></div>
+                                    <div class="col-md-12">
+                                    <div style="font-family: times new roman;font-size: 16px;color:black;">
+
+                                        <?php echo $row['description'];?></div>
                                     </div>
                                 </div>
                                 
@@ -196,19 +198,18 @@ $recent_blog = mysqli_query($con , "SELECT * FROM blog LIMIT 3 OFFSET ".$_GET['b
                                             
                                             <!-- Author post -->
                                             <div class="mt-20" style="background:#f8f8f8;padding: 4%;">
+                                                <?php if(isset($row['author_img']) && !empty($row['author_img'])){?>
                                                 <div>
                                                     <img class="img-circle" src="<?php echo $base_url . $row['author_img']; ?>" width="100" height="100">
                                                 </div>
+                                                <?php } ?>
                                                 <div>
                                                     <h5>About <?php echo $row['author_name']; ?></h5>
                                                 </div>
                                             </div>
                                             <!-- Author post -->
                                             
-                                            <div class="related-articles">
-                                            <!-- Title -->
-                                            <h4 class="text-center read_next">What you can read next</h4>
-                                            <!--/ Title -->
+
 
                                             <div class="row">
                                                 <?php while($row2 = mysqli_fetch_array($recent_blog)){

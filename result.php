@@ -99,7 +99,7 @@ $sections = mysqli_query($con, $query);
                             <h4 class="title text-uppercase font-raleway font-weight-500 m-0 pb-30"><?php echo $section['section']; ?></h4>
                             <div id="grid" class="gallery-isotope grid-4 gutter clearfix">
                                 <?php
-                                $query = 'SELECT * FROM result WHERE section = "' . $section['section'] . '"';
+                                $query = 'SELECT * FROM result WHERE section = "' . $section['section'] . '" DESC percentage';
                                 $result = $con->query($query);
                                 while ($result_row = $result->fetch_array(MYSQLI_ASSOC)) { ?>
                                     <!-- Portfolio Item Start -->

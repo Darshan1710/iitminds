@@ -17,6 +17,7 @@ if($id != "new"){
     $tag = "";
 }
 ?>
+<script src="<?php echo base_url()?>assets/admin/js/ckeditor/ckeditor.js"></script>
 <div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -80,9 +81,10 @@ if($id != "new"){
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Description</label>
                                 <div class="col-md-9">
-                                    <textarea class="form-control" name="description"><?php echo $description; ?></textarea>
+                                    <textarea class="form-control" name="description" id="description"><?php echo $description; ?></textarea>
                                 </div>
                             </div>
+							<br>
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Tagged</label>
                                 <div class="col-md-9">
@@ -140,6 +142,10 @@ if($id != "new"){
 $('#file').on('click',function(){
    $('#hidden_file_name').css('display','none');
 });
+
+	// Replace the <textarea id="editor1"> with a CKEditor 4
+	// instance, using default configuration.
+	CKEDITOR.replace( 'description' );
 </script>
 <script>
 $('#change_author_image').on('click',function(){
