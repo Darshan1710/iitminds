@@ -4,3 +4,13 @@
 .icon-box h4{
 	color: #f2f6fb!important;
 }
+.pagination > a{
+	padding: 10px 15px;
+	background: #cb3139;
+	border-radius: 0px;
+	border-right: 1px solid #fff;
+	color: white;
+}
+.pagination > a.active{
+	background: #1f1f1f;
+}

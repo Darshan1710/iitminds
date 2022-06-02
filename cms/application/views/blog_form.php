@@ -17,7 +17,7 @@ if($id != "new"){
     $tag = "";
 }
 ?>
-<script src="<?php echo base_url()?>assets/admin/js/ckeditor/ckeditor.js"></script>
+<script src="<?php echo base_url()?>assets/admin/js/ckeditor.js"></script>
 <div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -145,7 +145,19 @@ $('#file').on('click',function(){
 
 	// Replace the <textarea id="editor1"> with a CKEditor 4
 	// instance, using default configuration.
-	CKEDITOR.replace( 'description' );
+ClassicEditor
+	.create( document.querySelector( '#description' ), {
+		licenseKey: '',
+	} )
+	.then( editor => {
+		window.editor = editor;
+	} )
+	.catch( error => {
+		console.error( 'Oops, something went wrong!' );
+		console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+		console.warn( 'Build id: nrsf37otcdjd-aqyapgezkobi' );
+		console.error( error );
+	} );
 </script>
 <script>
 $('#change_author_image').on('click',function(){
@@ -161,3 +173,32 @@ $('#change_blog_image').on('click',function(){
    $('#hidden_blog_image').css('display',''); //hidden input for change blog image
 });
 </script>
+
+
+	<div class="row">
+
+	</div>
+
+	<div>
+		<p></p>
+	</div>
+
+<div class="mt-20 tagged_under">
+	<span class="itemTagsBlock">Tagged Under:</span>
+	<?php $tags = explode(',', $row['tag']);
+	if ($tags[0] != '') {
+		foreach ($tags as $t) {
+			?>
+			<a href="#" rel="tag" title="" class="tags"><span
+						class="glyphicon glyphicon-tag"></span> <?php echo $t; ?></a>
+		<?php }
+	} else {
+		echo '';
+	} ?>
+	<a class="btn btn-danger btn-lg pull-right"
+	   href="view_blog.php?blog_id=<?php echo $row['id']; ?>">Read More</a>
+</div>
+<div class="publish mt-20">
+	PUBLISHED IN
+	<a><strong>MOBILE</strong></a>
+</div>
