@@ -17,7 +17,7 @@ if($id != "new"){
     $tag = "";
 }
 ?>
-<script src="<?php echo base_url()?>assets/admin/js/ckeditor.js"></script>
+<!--<script src="--><?php //echo base_url()?><!--assets/admin/js/ckeditor.js"></script>-->
 <div class="row">
     <div class="col-md-12">
         <div class="card">
