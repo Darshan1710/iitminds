@@ -574,61 +574,7 @@
         </section>
 
         <!-- Section: home-boxes -->
-        <section class="bg-silver-light">
-            <div class="container pt-0 pb-0">
-                <div class="section-content">
-                    <div class="row equal-height-inner home-boxes" data-margin-top="-100px">
-                        <div class="col-sm-12 col-md-offset-1 col-md-2 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay1">
-                            <div class="sm-height-auto bg-theme-colored">
-                                <div class="text-center pt-30 pb-30">
-                                    <i class="fa fa-book text-white font-64"></i>
-                                    <h4 class="text-uppercase mt-20 text-white">E-brochure</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-2 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
-                            <div class="sm-height-auto bg-theme-colored-darker2">
-                                <a href="blog.php">
-                                <div class="text-center pt-30 pb-30">
-                                    <i class="fa fa-user text-white font-64"></i>
-                                    <h4 class="text-uppercase mt-20 text-white">Blogs</h4>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-2 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay3">
-                            <div class="sm-height-auto bg-theme-colored-darker3">
-                                <div class="text-center pt-30 pb-30">
-                                    <i class="fa fa-file-text-o text-white font-64"></i>
-                                    <h4 class="text-uppercase mt-20 text-white">Awards &
-                                        Recognition</h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-2 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay4">
-                            <div class="sm-height-auto bg-theme-colored-darker4">
-                                <a href="media-&-press.php">
-                                <div class="text-center pt-30 pb-30">
-                                    <i class="fa fa-bullhorn text-white font-64"></i>
-                                    <h4 class="text-uppercase mt-20 text-white">News</h4>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-12 col-md-2 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay4">
-                            <div class="sm-height-auto bg-theme-colored-darker5">
-                                <div class="text-center pt-30 pb-30">
-                                    <i class="fa fa-bullhorn text-white font-64"></i>
-                                    <h4 class="text-uppercase mt-20 text-white">Gallery</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  
 
 
         <!-- Section: About -->

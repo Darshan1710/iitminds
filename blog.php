@@ -171,7 +171,7 @@ $archive = mysqli_query($con, "SELECT COUNT(CONCAT(MONTHNAME(date), ' ', YEAR(da
                         <?php
 
                         $query = "SELECT COUNT(*) as total_rows FROM blog".$month;
-                        
+
                         $pagination = mysqli_query($con,$query);
                         $row = mysqli_fetch_assoc($pagination);
                         $total_rows = $row['total_rows'];

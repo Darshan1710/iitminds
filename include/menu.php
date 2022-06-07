@@ -36,10 +36,12 @@
               </li>
               <li class="<?php if($file_name == 'result.php') { echo 'active'; } ?>"><a href="result.php">
                       Result</a></li>
-<!--                <li class="--><?php //if($file_name == 'media-&-press.php') { echo 'active'; } ?><!--"><a href="media-&-press.php">-->
-<!--                        News</a></li>-->
-<!--              <li class="--><?php //if($file_name == 'blog.php') { echo 'active'; } ?><!--"><a href="blog.php">Blog</a></li>-->
-              <li class="<?php if($file_name == 'contact-us.php') { echo 'active'; } ?>"><a href="contact-us.php">Contact Us</a></li>
+              <li class="<?php if($file_name == 'blog.php') { echo 'active'; } ?>"><a href="blog.php">Blog</a></li>
+
+                <li class="<?php if($file_name == 'media-&-press.php') { echo 'active'; } ?>"><a href="media-&-press.php">
+                                       Gallery</a></li>
+                <li><a href="#" download>E-brochure</a></li>
+                <li class="<?php if($file_name == 'contact-us.php') { echo 'active'; } ?>"><a href="contact-us.php">Contact Us</a></li>
 
               </li>
             </ul>
